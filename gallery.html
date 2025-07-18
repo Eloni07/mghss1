@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGHSS</title>
+    <link rel="icon" href="/image/mt.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <!-- Logo -->
+                    <a class="nav-link" href="/index.html"><img src="/image/mt.png" alt="Logo" class="logo me-2"></a>
+
+                    <!-- Full name on desktop -->
+                    <span class="fw-bold fs-3 d-none d-md-inline">Mount Gibeon Higher Secondary School</span>
+
+                    <!-- Short name on mobile -->
+                    <span class="fw-bolder fs-1 d-inline d-md-none">MGHSS</span>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end nav-links" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container py-5">
+        <h2 class="text-center" style="margin-top: 70px; margin-bottom: 30px;">Image Gallery</h2>
+
+        <!-- Tab Navigation -->
+        <div class="tab-navigation justify-content-center">
+            <button class="tab-btn active" data-tab="nature">Gallery 1</button>
+            <button class="tab-btn" data-tab="architecture">Gallery 2</button>
+            <button class="tab-btn" data-tab="interior">Gallery 3</button>
+        </div>
+
+        <!-- Nature Tab -->
+        <div class="tab-content active" id="nature">
+            <div class="grid-container py-4">
+                <div class="grid-item">
+                    <img src="/image/1.jpg" alt="Mountain lake">
+                    <div class="image-overlay">
+                        <h5>Volley Ball Team</h5>
+                        <p class="mb-0">Girls</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/2.jpg" alt="Mountain lake">
+                    <div class="image-overlay">
+                        <h5>Ethnic Day Celebration</h5>
+                        <p class="mb-0">2024</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/3.jpg" alt="Forest">
+                    <div class="image-overlay">
+                        <h5>Ethnic Day Celebration</h5>
+                        <p class="mb-0">Miss Hriimania with the boys</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/4.jpg" alt="Mountains">
+                    <div class="image-overlay">
+                        <h5>Basket Ball Team</h5>
+                        <p class="mb-0">Girls</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="/image/5.jpg" alt="Mountain lake">
+                    <div class="image-overlay">
+                        <h5>Mr. and Miss Fresher 2024</h5>
+                        <p class="mb-0">Fresher Day Celebration</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/6.jpg" alt="Mountain lake">
+                    <div class="image-overlay">
+                        <h5>Ethnic Day Celebration</h5>
+                        <p class="mb-0">Mao Traditional Attire</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/7.jpg" alt="Forest">
+                    <div class="image-overlay">
+                        <h5>Basket Ball Team</h5>
+                        <p class="mb-0">Boys</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/girls.jpg" alt="Mountains">
+                    <div class="image-overlay">
+                        <h5>Girls</h5>
+                        <p class="mb-0">Kindergarten</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture Tab -->
+        <div class="tab-content" id="architecture">
+            <div class="grid-container py-4">
+                <div class="grid-item">
+                    <img src="/image/9.jpg" alt="Modern Building">
+                    <div class="image-overlay">
+                        <h5>Modern Architecture</h5>
+                        <p class="mb-0">Contemporary design meets functionality</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/10.jpg" alt="Modern Building">
+                    <div class="image-overlay">
+                        <h5>Modern Architecture</h5>
+                        <p class="mb-0">Contemporary design meets functionality</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/11.jpg" alt="City Architecture">
+                    <div class="image-overlay">
+                        <h5>Urban Landscape</h5>
+                        <p class="mb-0">City skyline at twilight</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/12.jpg" alt="Historic Building">
+                    <div class="image-overlay">
+                        <h5>Historic Architecture</h5>
+                        <p class="mb-0">Classical design elements</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container py-4">
+                <div class="grid-item">
+                    <img src="/image/13.jpg" alt="Modern Building">
+                    <div class="image-overlay">
+                        <h5>Modern Architecture</h5>
+                        <p class="mb-0">Contemporary design meets functionality</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/14.jpg" alt="Modern Building">
+                    <div class="image-overlay">
+                        <h5>Modern Architecture</h5>
+                        <p class="mb-0">Contemporary design meets functionality</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/15.jpg" alt="City Architecture">
+                    <div class="image-overlay">
+                        <h5>Urban Landscape</h5>
+                        <p class="mb-0">City skyline at twilight</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/16.jpg" alt="Historic Building">
+                    <div class="image-overlay">
+                        <h5>Historic Architecture</h5>
+                        <p class="mb-0">Classical design elements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Interior Tab -->
+        <div class="tab-content" id="interior">
+            <div class="grid-container py-4">
+                <div class="grid-item">
+                    <img src="/image/17.jpg" alt="Modern Interior">
+                    <div class="image-overlay">
+                        <h5>Modern Living</h5>
+                        <p class="mb-0">Contemporary interior design</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/18.jpg" alt="Minimalist Room">
+                    <div class="image-overlay">
+                        <h5>Minimalist Design</h5>
+                        <p class="mb-0">Clean lines and simple elegance</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/19.jpg" alt="Cozy Space">
+                    <div class="image-overlay">
+                        <h5>Cozy Corner</h5>
+                        <p class="mb-0">Warm and inviting interior</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/20.jpg" alt="Cozy Space">
+                    <div class="image-overlay">
+                        <h5>Cozy Corner</h5>
+                        <p class="mb-0">Warm and inviting interior</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container py-4">
+                <div class="grid-item">
+                    <img src="/image/21.jpg" alt="Modern Interior">
+                    <div class="image-overlay">
+                        <h5>Modern Living</h5>
+                        <p class="mb-0">Contemporary interior design</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/22.jpg" alt="Minimalist Room">
+                    <div class="image-overlay">
+                        <h5>Minimalist Design</h5>
+                        <p class="mb-0">Clean lines and simple elegance</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/23.jpg" alt="Cozy Space">
+                    <div class="image-overlay">
+                        <h5>Cozy Corner</h5>
+                        <p class="mb-0">Warm and inviting interior</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/24.jpg" alt="Cozy Space">
+                    <div class="image-overlay">
+                        <h5>Cozy Corner</h5>
+                        <p class="mb-0">Warm and inviting interior</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f text-success"></i></a>
+
+                <!-- Twitter -->
+                <a href="#" class="social-icon"><i class="fab fa-twitter text-success"></i></a>
+
+                <!-- Google -->
+                <a href="#" class="social-icon"><i class="fab fa-google text-success"></i></a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/mt_gibeon_hr_sec_schooltadubi?igsh=MTFhenN1OXhieGww"
+                    class="social-icon"><i class="fab fa-instagram text-success"></i></a>
+
+                <!-- Linkedin -->
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in text-success"></i></a>
+                <!-- Github -->
+                <a href="#" class="social-icon"><i class="fab fa-github text-success"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-success text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+            <a class="text-success text-body" href=""> <span class="text-success" style="font-weight: bolder;">Mount
+                    Gibeon Higher
+                    Secondary School.</span> <br> <span class="text-success">Designed By:</span>
+                <span class="text-success" style="font-weight: bolder;">NextGen Computer Institute.</span></a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
