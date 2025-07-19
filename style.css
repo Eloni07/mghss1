@@ -460,6 +460,7 @@ nav {
 
 .testimonials .card-text {
     font-style: italic;
+    text-align: justify;
 }
 
 .testimonials img {
@@ -569,7 +570,7 @@ body {
 }
 
 .bio {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 @media (max-width: 740px) {
@@ -587,10 +588,7 @@ body {
 
 @media (max-width: 740px) {
     .alem {
-        font-size: 1px;
         text-align: center;
-        font-weight: normal;
-        font-family: cursive;
     }
 }
 
@@ -598,12 +596,20 @@ body {
     .bio {
         line-height: 1.2;
         font-weight: normal;
+        font-size: 18px;
+        text-align: justify;
     }
 }
 
 @media (max-width: 740px) {
     .fbz {
         padding-top: 200px;
+    }
+}
+
+@media (max-width: 740px) {
+    .text-muted {
+        text-align: justify;
     }
 }
 
