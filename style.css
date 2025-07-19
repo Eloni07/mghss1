@@ -460,6 +460,7 @@ nav {
 
 .testimonials .card-text {
     font-style: italic;
+    text-align: justify;
 }
 
 .testimonials img {
@@ -587,10 +588,7 @@ body {
 
 @media (max-width: 740px) {
     .alem {
-        font-size: 1px;
         text-align: center;
-        font-weight: normal;
-        font-family: cursive;
     }
 }
 
@@ -604,6 +602,12 @@ body {
 @media (max-width: 740px) {
     .fbz {
         padding-top: 200px;
+    }
+}
+
+@media (max-width: 740px) {
+    .text-muted {
+        text-align: justify;
     }
 }
 
