@@ -239,26 +239,6 @@ nav {
     padding-bottom: 50px;
 }
 
-.about-col {
-    flex-basis: 48%;
-    padding: 30px 2px;
-
-}
-
-.about-col img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-
-.about-col h1 {
-    padding: 0;
-}
-
-.about-col p {
-    padding: 15px 0 25px;
-}
-
 .red-btn {
     border: 1px solid #f44366;
     background: transparent;
@@ -710,31 +690,39 @@ body {
     }
 }
 
-.about-us {
-    background-color: #f8f9fa;
-}
-
-.about-us img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.about-us img:hover {
-    transform: scale(1.05);
-}
-
-.about-us .list-unstyled li {
-    margin-bottom: 10px;
-}
-
-.about-us .btn-primary {
-    transition: all 0.3s ease;
-}
-
-.about-us .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .about {
     padding-top: 120px;
+}
+
+.card:hover {
+    box-shadow: -5px 50px 100px rgba(223, 241, 223, 0.5);
+}
+
+.card:hover h6 {
+    font-weight: 700;
+}
+
+.card:hover p {
+    font-weight: 500;
+}
+
+.card:hover small {
+    font-weight: 500;
+}
+
+.featurette {
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
+.rounded {
+    margin-top: 150px;
+    /* margin-bottom: 50px; */
+}
+
+.blog {
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: calc(1.475rem + 2.7vw);
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
