@@ -587,11 +587,11 @@ body {
     }
 }
 
-@media (max-width: 740px) {
+/* @media (max-width: 740px) {
     .text-muted {
         text-align: justify;
     }
-}
+} */
 
 
 .tangerine-regular {
