@@ -150,6 +150,7 @@ h1 {
 
 nav {
     padding-top: 0;
+    /* background-color: #eef1f0; */
     background-color: #089754;
     color: #ffffff;
 }
@@ -523,7 +524,7 @@ body {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/image/home.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/image/new.jpg);
     background-size: cover;
     height: 100vh;
     color: white;
@@ -531,17 +532,25 @@ body {
     align-items: center;
 }
 
+@media (max-width: 740px) {
+    .hero {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/image/new1.jpg);
+    }
+}
+
+
 .logo {
     height: 80px;
     /* Default for desktop */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
     .logo {
         height: 40px;
         /* Smaller for mobile */
     }
 }
+
 
 .school {
     text-align: justify;
@@ -556,6 +565,13 @@ body {
 @media (max-width: 740px) {
     .school {
         margin-top: 150px;
+    }
+}
+
+@media (max-width: 740px) {
+    .abot {
+        padding-left: 30px;
+        text-align: center;
     }
 }
 
