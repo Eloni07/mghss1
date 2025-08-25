@@ -17,3 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 e.preventDefault();
 
+document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('.accordion');
+    accordions.forEach(acc => {
+        acc.addEventListener('shown.bs.collapse', e => {
+            const header = e.target.previousElementSibling;
+            const marquee = header?.querySelector('.marquee');
+            if (marquee) marquee.classList.add('paused');
+        });
+        acc.addEventListener('hidden.bs.collapse', e => {
+            const header = e.target.previousElementSibling;
+            const marquee = header?.querySelector('.marquee');
+            if (marquee) marquee.classList.remove('paused');
+        });
+    });
+});

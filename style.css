@@ -779,3 +779,164 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+.shake {
+    display: inline-block;
+    animation: shake 3s infinite;
+    transform-origin: top center;
+    /* makes it swing like a bell */
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 8s linear infinite;
+    animation-play-state: running;
+    /* run by default */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.blink {
+    animation: blinkColors 1s infinite;
+}
+
+@keyframes blinkColors {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+/* NEW */
+:root {
+    /* Easy speed tweaks per marquee; override with inline style if needed */
+    --marquee-speed: 14s;
+    /* lower = faster */
+    --marquee-gap: 4rem;
+}
+
+/* Make accordion buttons a bit taller to give marquee room */
+.accordion-button {
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+
+/* Marquee container inside the button */
+.marquee {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    /* Keep the button layout nice: */
+    white-space: nowrap;
+    mask-image: linear-gradient(to right, transparent 0, #000 2rem, #000 calc(100% - 2rem), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 2rem, #000 calc(100% - 2rem), transparent 100%);
+}
+
+/* The moving lane */
+.marquee__track {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--marquee-gap);
+    will-change: transform;
+    animation: marquee var(--marquee-speed) linear infinite;
+}
+
+/* Duplicate content to make it seamless */
+.marquee__item {
+    display: inline-block;
+    padding-right: var(--marquee-gap);
+    white-space: nowrap;
+}
+
+/* Pause helpers */
+.marquee.paused .marquee__track {
+    animation-play-state: paused;
+}
+
+.accordion-button:focus .marquee__track,
+.accordion-button:hover .marquee__track {
+    animation-play-state: paused;
+}
+
+/* Keyframes */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* We’ll size the track so 50% = one repeat */
+}
+
+/* Make the track wide enough to loop smoothly by duplicating its content */
+.marquee__track>.marquee__item-group {
+    display: inline-flex;
+    gap: var(--marquee-gap);
+}
+
+/* Visually distinguish accordions a bit */
+.accordion-item {
+    border-radius: 1rem !important;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
+}
